@@ -1,0 +1,239 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@media (max-width: 926px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    background-size : cover;
+    background-position : center;
+    overflow-y: scroll;
+}
+ion-header{
+    ion-toolbar, ion-item{
+        --background: rgb(0, 208, 255);
+        background: rgb(0, 208, 255);
+        padding: 10px;
+    }
+
+    ion-toolbar{
+        .bordered{
+            --border-radius: 10px;
+            --box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #FFFFFF;
+        }
+    }
+
+    ion-item{
+        h3{
+            font-weight: 700;
+            font-size: 14px;
+            color:white;
+        }
+
+        ion-text.p {
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+        }
+
+        ion-avatar{
+            --border-radius: 40%;
+        }
+    }
+}
+.wrapper.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;  /* Center the container on the page */
+  }
+  .wrapper .btn {
+    box-shadow: none;
+    width: 50%;
+    height: 80px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+.wrapper {
+    width: 90%;
+    height: auto;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    ion-card {
+        background-color: #039BE5;
+    
+    }
+}
+.wrapper1 {
+    width: 100%;
+    height: 100px;
+    margin: 80px auto;
+    padding: 30px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    ion-card {
+        background-color: #039BE5;
+    
+    }
+}
+  ion-header{
+    background-color: rgb(0, 208, 255);
+  }
+  ion-header ion-text{
+    padding-left: 65px;
+  }
+  
+  .logo {
+    width: 80px;
+    margin: auto;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+.logo {
+    width: 80px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #5f5f5f,
+    0px 0px 0px 5px #ecf0f3,
+    8px 8px 15px #a7aaa7,
+    -8px -8px 15px #fff;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+.wrapper1 ion-card .img{
+    width: 50%;
+    height: auto;
+}
+}
+</style>
+<body>
+  <ion-header class="ion-no-border">
+    <ion-toolbar start="end">
+      <ion-avatar>
+        <img src="assets/logo.png">
+      </ion-avatar>
+      <ion-title start="end">
+        <ion-label>
+          <ion-text>KELUHAN ASPIRASI ONLINE</ion-text>
+        </ion-label>
+      </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<div class="wrapper">
+  <div class="container text-center">
+    <div class="row">
+
+      <div class="col">
+        <div class="col-md-6">
+          <button class="btn btn-primary" (click)="keluhan()">KELUHAN</button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col-md-6">
+          <button class="btn btn-primary" (click)="pkeluhan()">PROSES KELUHAN</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="col-md-6">
+          <button class="btn btn-primary" (click)="rkeluhan()">RIWAYAT KELUHAN</button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col-md-6">
+          <button class="btn btn-primary" (click)="rate()">RATE</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="wrapper1">
+  <ion-card>
+    <img src="http://sman1telukjambe.sch.id/images/berita/gb31.jpg" class="rounded float-left" alt="...">
+    <img src="http://sman1telukjambe.sch.id/images/berita/gb30.jpg" class="rounded float-right" alt="...">
+  </ion-card>
+</div>
+</body>

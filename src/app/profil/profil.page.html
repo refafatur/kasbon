@@ -1,0 +1,84 @@
+<div class="header">
+  <ion-buttons>
+    <ion-button (click)="home()">
+      <ion-icon slot="start" icon="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+
+  <div class="wrapper">
+      <div class="logo">
+          <img src="assets/profil.jpg" alt="">
+      </div>
+
+      <div class="text-center mt-4 name">
+       Profil
+      </div>
+  
+  <form class="p-3 mt-3">
+    <div class="text-center mt-4">
+      Nama : Rizki Ramadhan
+    </div>
+
+    <div class="text-center mt-4">
+      NISN : 12522022
+    </div>
+
+    <div class="text-center mt-4">
+      TTL : Bogor,20 januari 2004
+    </div>
+
+    <div class="text-center mt-4">
+      Asal Sekolah : SMPN 2 BOGOR
+    </div>
+
+    <div class="text-center mt-4">
+      Email : rizkiramadhan.gmail.com
+    </div>
+
+    <div class="text-center mt-4">
+      No Handphone : 0818108774
+    </div>
+<!-- 
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input type="text" placeholder="Nama" name="password">
+  </div>
+
+    <div class="form-field d-flex align-items-center">
+        <span class="fas fa-key"></span>
+        <input type="text" placeholder="Tempat, Tanggal Lahir" name="password">
+    </div>
+
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input type="text" placeholder="Asal Sekolah" name="password">
+    </div>
+
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input type="text" placeholder="Email" name="password">
+  </div>
+
+    <div class="form-field d-flex align-items-center">
+        <span class="fas fa-key"></span>
+        <input type="text" placeholder="No Handphone" name="password">
+    </div>
+
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input type="text" placeholder="NISN" name="password">
+    </div> -->
+  
+    <button class="btn mt-3" (click)="ganti()">Ubah Profil</button>
+    <button class="btn mt-3" (click)="logout()" style="background-color: red;">Logout</button>
+
+  </form>
+
+</div>
+
+</body>
